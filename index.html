@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Asesmen Formatif Fisika - Besaran dan Satuan</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar"><div class="brand"><div class="brand-icon">Φ</div><div><b>UJIAN ONLINE FISIKA</b><small>ASESMEN FORMATIF • FASE E</small></div></div><div class="top-tag">SMAN 1 KARANGANYAR</div></div>
+<main class="wrap">
+<section id="intro" class="panel intro">
+<div class="eyebrow">PENILAIAN FORMATIF</div><h1>Besaran dan Satuan</h1><p class="sub">Fisika • Kelas X / Fase E</p>
+<div class="info-grid"><div><span>ALOKASI WAKTU</span><b>90 menit</b></div><div><span>SOAL ONLINE</span><b>26 nomor</b></div><div><span>TIPE II</span><b>5 nomor tertulis</b></div></div>
+<div class="notice"><b>Petunjuk pengerjaan</b><ol><li>Isi nama menggunakan HURUF KAPITAL, kelas, dan nomor absen dengan benar.</li><li>Berdoalah sebelum mengerjakan soal.</li><li>Jaga integritas dan utamakan kejujuran.</li><li>Tipe I dikerjakan melalui aplikasi. Tipe II (nomor 30–34) dikerjakan pada kertas lembar jawaban.</li><li>Dilarang menggunakan alat bantu hitung/kalkulator.</li><li>Pastikan seluruh jawaban sudah diperiksa sebelum menekan tombol KIRIM.</li></ol></div>
+<div class="identity"><h2>Identitas Peserta</h2><label>Nama lengkap<input id="nama" placeholder="TULISKAN NAMA DENGAN HURUF KAPITAL" autocomplete="name" required></label><div class="two"><label>Kelas<select id="kelas"><option value="">Pilih kelas</option><option>X E.7</option><option>X E.8</option><option>X E.9</option></select></label><label>Nomor absen<select id="absen"><option value="">Pilih nomor</option></select></label></div><button id="startBtn" class="primary wide">MULAI MENGERJAKAN <span>→</span></button><p id="identityError" class="error"></p></div>
+</section>
+<section id="exam" class="hidden">
+<div class="exam-head panel"><div><div class="eyebrow">ASESMEN FORMATIF • FISIKA</div><h2>Besaran dan Satuan</h2><small id="studentLabel"></small></div><div class="timer"><span>SISA WAKTU</span><b id="timer">90:00</b></div></div>
+<div class="progress-wrap"><div class="progress-meta"><span id="progressText">Soal 1 dari 26</span><span id="answeredText">0 terjawab</span></div><div class="progress"><i id="progressBar"></i></div></div>
+<div class="layout"><aside class="panel navigator"><b>Navigasi Soal</b><div id="questionNav" class="nav-grid"></div><div class="legend"><span><i class="dot done"></i> Terjawab</span><span><i class="dot"></i> Belum</span></div><button id="finishBtn" class="primary wide">SELESAI & KIRIM</button></aside><article class="panel question-panel"><div class="qtop"><span id="qtype" class="qtype">PILIHAN GANDA</span><span id="qnumber">SOAL 1</span></div><div id="questionContent"></div><div class="qcontrols"><button id="prevBtn" class="secondary">← Sebelumnya</button><button id="nextBtn" class="primary">Berikutnya →</button></div></article></div>
+</section>
+<section id="written" class="panel hidden"><div class="eyebrow">TIPE SOAL II • DIKERJAKAN DI KERTAS</div><h2>Soal uraian / tabel</h2><p>Nomor 30–34 dikerjakan pada lembar jawaban kertas. Tidak perlu mengisi jawaban uraian di aplikasi. Serahkan lembar jawaban kepada guru setelah selesai.</p><div class="written-list"><div><b>30.</b> Lengkapilah tabel besaran, satuan SI, dan dimensi.<img src="assets/q30-tabel-besaran.png"></div><div><b>31.</b> Tentukan jumlah angka penting dari setiap hasil pengukuran.<img src="assets/q31-tabel-ap.png"></div><div><b>32.</b> Selesaikan operasi hitung menggunakan aturan angka penting.<img src="assets/q32-operasi-ap.png"></div><div><b>33.</b> Tentukan hasil pengukuran panjang pensil menggunakan jangka sorong.<img src="assets/q33-jangka-sorong.png"></div><div><b>34.</b> Tentukan diameter kelereng menggunakan mikrometer sekrup.<img src="assets/q34-mikrometer.png"></div></div><label class="confirm"><input type="checkbox" id="writtenDone"> Saya sudah memahami bahwa nomor 30–34 dikerjakan pada kertas.</label><button id="submitFinal" class="primary wide">KIRIM JAWABAN ONLINE</button></section>
+<section id="result" class="panel hidden"><div class="result-icon">✓</div><div class="eyebrow">JAWABAN BERHASIL DIPROSES</div><h1>Terima kasih!</h1><p id="resultMessage">Jawabanmu telah dikirim.</p><div class="score-card"><span>SKOR PILIHAN GANDA</span><b id="scoreValue">-</b><small id="scoreDetail"></small></div><p class="muted">Simpan konfirmasi ini. Hasil akhir dapat dilihat oleh guru melalui Google Spreadsheet.</p></section>
+</main><footer>ASESMEN FORMATIF FISIKA • BESARAN DAN SATUAN</footer>
+<script src="config.js"></script><script src="app.js"></script>
+</body></html>
